@@ -240,3 +240,84 @@ iframe{
     left: 70px;
     text-shadow: 8px 9px 15px;
 }
+
+
+@media (max-width:600px) {
+
+    
+    body{
+        display: flex;
+        
+    }
+
+    body h1{
+        
+        font-size: 18px;
+        font-weight: 900;
+        position: absolute;
+        left: 20vw;
+                
+        position: relative;
+    }
+    .nav-fix{
+        display: none;
+    }
+
+    header{
+        position: relative;
+        bottom:280px;
+        left: -15px;
+    }
+    .carousel{
+       
+        position: relative;
+        top: 12vw;
+        right: 80vw;
+        
+        border-radius: 2%;
+        
+    }
+
+    .des{
+        
+        height: 100px;
+        width: 280px;
+        padding: 1px 2px;
+        
+    }
+
+    .item img{
+        height: fit-content;
+        position: relative;
+                
+        top:280px;
+    } 
+
+    iframe{
+        position: relative;
+        top: -100px;
+        align-items: center;
+        aspect-ratio: 16/9;
+        width: 15vh;
+    }
+
+    .mem-info{
+        padding: 10%;
+        text-align: left;
+        height: 10vh;
+        width: 10vw;
+    }
+    .mem-info h2{
+        text-align: center;
+        background-color: #f1683a;
+        height: 5vh;
+        width: 10vw;
+    }
+   .contact{
+    display: none;
+    
+   
+}
+    
+}
+
