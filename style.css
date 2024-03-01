@@ -19,8 +19,7 @@ body{
     color: white;
     margin: 0;
     font-size: 18px;
-    position:relative;
-
+   position: absolute;
    
 }
 .logo{
@@ -183,7 +182,7 @@ iframe{
     border-radius: 10%;
     position: relative;
     margin: 10px;
-    width: 450px;
+    width: min(20rem);
     aspect-ratio: 16/9;
 }
 
@@ -242,82 +241,69 @@ iframe{
 }
 
 
-@media (max-width:600px) {
+@media (max-width:680px) {
 
     
     body{
-        display: flex;
+        width: 680px;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
         
-    }
-
-    body h1{
-        
-        font-size: 18px;
-        font-weight: 900;
-        position: absolute;
-        left: 20vw;
-                
-        position: relative;
     }
     .nav-fix{
         display: none;
     }
 
-    header{
+    .logo img{
         position: relative;
-        bottom:280px;
-        left: -15px;
+        bottom: 10px;
+        scale: .8;
+        right: 30px;
+        overflow: hidden;
+        object-fit: cover;
     }
-    .carousel{
-       
+    .content{
         position: relative;
-        top: 12vw;
-        right: 80vw;
         
-        border-radius: 2%;
-        
-    }
-
-    .des{
-        
-        height: 100px;
-        width: 280px;
-        padding: 1px 2px;
-        
+        margin-top: -40%;
     }
 
     .item img{
-        height: fit-content;
-        position: relative;
-                
-        top:280px;
-    } 
-
-    iframe{
-        position: relative;
-        top: -100px;
-        align-items: center;
-        aspect-ratio: 16/9;
-        width: 35vh;
+        object-fit: cover;
+        height: 10px;
+        width: 10px;
     }
 
-    .mem-info{ 
-        padding: 10%;
-        text-align: left;
-        height: 10vh;
-        width: 10vw;
+    .ks{
+        font-size: 12px;
+        position: relative;
+        bottom: 10px;
+        left: 70px;
     }
-    .mem-info h2{
+      iframe {
+            border: 3px solid rgb(229, 11, 11);
+            border-radius: 10%;
+            position: relative;
+            margin: 10px;
+            width: min(12rem);
+            aspect-ratio: 16/9;
+            justify-content: space-around;
+        }
+
+    .mem-info h2,.mem-info h1{
+        position: relative;
         text-align: center;
-        background-color: #f1683a;
-        height: 5vh;
-        width: 10vw;
+        bottom: 10px;
+        scale: 1.2;
+        
+    }.contact{
+        display: none;
     }
-   .contact{
-    display: none;
-    
+
+       
    
-}
+            }
     
-}
+
 
